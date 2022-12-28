@@ -1,0 +1,19 @@
+{
+  "name": "projet_3_grenier_thomas_102022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasG6/Projet_3_Grenier_Thomas_102022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasG6/Projet_3_Grenier_Thomas_102022/issues"
+  },
+  "homepage": "https://github.com/ThomasG6/Projet_3_Grenier_Thomas_102022#readme"
+}
