@@ -15,4 +15,18 @@ body {
   }
 }
 
+.header {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.header__icone {
+  display: flex;
+  align-self: center;
+  font-size: 1.2em;
+  padding-left: 1.2em;
+}
+
 /*# sourceMappingURL=style.css.map */
