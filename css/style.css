@@ -290,6 +290,29 @@ a :visited {
   font-size: 2em;
   color: #737373;
 }
+.restaurantcard__infos__iconealt {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #9356DC;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media screen and (min-width: 250px) {
+  .restaurantcard__infos__iconealt:active {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurantcard__infos__iconealt:hover {
+    opacity: 1;
+  }
+}
 
 .restaurantpic {
   width: 100%;

@@ -66,6 +66,32 @@
             font-size: 2em;
             color: darken($color: $color-alt, $amount: 50%);
         }
+
+        &__iconealt {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: $color-primary;
+            opacity: 0;
+            transition: opacity 0.5s;
+
+            @include mq(250px) {
+                &:active {
+                    opacity: 1;
+                }
+            }
+
+            @include mq(large) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 
