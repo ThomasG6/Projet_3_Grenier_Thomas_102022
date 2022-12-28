@@ -9,3 +9,12 @@
       @content;
     }
 }
+
+//delais aniamtion apparition des plats page menu
+@mixin delay($rule, $number, $value) {
+  @for $i from 1 to ($number + 1) {
+    &:nth-child(#{$i}) {
+      #{$rule}-delay: (#{$i*$value});
+    }
+  }
+}

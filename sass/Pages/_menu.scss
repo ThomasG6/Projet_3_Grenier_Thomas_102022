@@ -160,7 +160,7 @@
             opacity: 0;
             animation: loading-page 400ms;
             animation-fill-mode: forwards;
-
+            @include delay(animation, 4, 0.25s);
               
             &__title {
                 width:75%;
