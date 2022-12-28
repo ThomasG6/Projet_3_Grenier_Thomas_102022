@@ -1,0 +1,14 @@
+// mise en place de la police d'écriture
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    font-size: 85%;
+
+    @include mq(small) {
+        font-size: 100%;
+    }
+
+    @include mq(large) {
+        font-size: 130%;
+    }
+}
