@@ -301,6 +301,20 @@ a :visited {
   z-index: 1;
 }
 
+.newtag {
+  background-color: #99E2D0;
+  color: #278870;
+  position: relative;
+  top: -95%;
+  left: 72%;
+  width: 25%;
+  height: 18%;
+  border-radius: 0.2em/0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .infos__heading {
   margin: 5% 0 0 3%;
 }
