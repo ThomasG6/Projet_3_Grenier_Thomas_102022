@@ -1,14 +1,11 @@
-.header {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 100%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+.title {
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
 
-    &__icone {
-        display: flex;
-        align-self: center;
-        font-size: 1.2em;
-        padding-left: 1.2em;
+    @include mq(small) {
+        height: 3rem;
     }
 }
