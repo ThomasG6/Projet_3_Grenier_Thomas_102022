@@ -1,0 +1,262 @@
+.header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+    &__icone {
+        display: flex;
+        align-self: center;
+        font-size: 1.2em;
+        padding-left: 1.2em;
+    }
+}
+.titlemenu {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include mq(medium) {
+        font-size: 3em;
+    }
+}
+.maincontainermenu {
+    position: relative;
+    background-color: $color-alt;
+    padding-bottom: 5%;
+
+    .headerpic {
+        height: 250px;
+
+        @include mq(small) {
+            height: 450px;
+        }
+    }
+
+    .restaurantpicheader {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        position: relative;
+
+        @include mq(large) {
+            object-position: center;
+        }
+    }
+
+    &__header {
+        font-family: 'Shrikhand', sans-serif;
+        background-color: $color-alt;
+        border-top-right-radius: 3em;
+        border-top-left-radius: 3em;
+        padding-top: 8%;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        display: grid;
+        grid-template-columns: 85% 15%;
+        grid-template-rows: 100%;
+
+        h2 {
+            margin: 0 0 0 5%;
+            font-size: 2em;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        &__icone {
+            margin-right: 10%;
+            font-size: 2em;
+            color: darken($color: $color-alt, $amount: 50%);
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        &__iconealt {
+            margin-right: 10%;
+            font-size: 2em;
+            color: $color-primary;
+            opacity: 0;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            transition: opacity 0.5s;
+
+            @include mq(250px) {
+                &:active {
+                    opacity: 1;
+                }
+            }
+
+            @include mq(large) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        @include mq(small) {
+            top: 400px;
+            font-size: 100%;
+        }
+
+        @include mq(medium) {
+            font-size: 150%;
+        }
+
+        @include mq(large) {
+            top: 370px;
+        }
+    }
+
+    &__order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+    }
+
+    .menu {
+        position: relative;
+
+        >h3 {
+            margin: 40px 0 4% 5%;
+            padding: 0 0 1% 0;
+            font-weight: 100;
+            width: 40px;
+            border-bottom: $color-tertiary solid 3px;
+
+            @include mq(small) {
+                margin-top: 10%;
+            }
+
+            @include mq(large) {
+                width: 60px;
+                font-size: 1.3em;
+            }
+        }
+
+        &__option {
+            background-color: white;
+            display: flex;
+            align-items: flex-end;
+            align-content: center;
+            justify-content: space-between;
+            margin: 0 5% 5% 5%;
+            padding: 1rem;
+            border-radius: 1em/1em;
+            box-shadow: 0 6px 6px #d2d2d2;
+            height: fit-content;
+            overflow: hidden;
+            opacity: 0;
+            animation: loading-page 400ms;
+            animation-fill-mode: forwards;
+
+              
+            &__title {
+                width:75%;
+                font-size: 95%;
+                align-self: flex-end;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+
+                @include mq(large) {
+                    font-size: 1.2em;
+                }
+
+                h3 {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin: 0;
+                }
+
+                p {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 90%;
+                    margin: 0;
+                }
+            }
+
+            &__price {
+                align-self: flex-end;
+                margin: 0;
+
+                @include mq(medium) {
+                    margin-right: -70px;
+                }
+                & span {
+                    font-weight: bold;
+                }
+            }
+
+            &__iconewrapper {
+                background-color: $color-tertiary;
+                margin: -1rem -5rem -1rem 1rem;
+                width: 4rem;
+                height: 4.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: 500ms;
+
+                @include mq(250px) {
+                    height: 5rem;
+                    width: 5rem;
+                    margin-right: -6.4rem;
+                }
+
+                @include mq(large) {
+                    height: 6.5rem;
+                    width: 6.4rem;
+                    margin-right: -7.4rem;
+                }
+
+                & .check {
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    font-size: 150%;
+                    background-color: $color-tertiary;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    transform: rotate(0deg);
+                    transition-duration: 500ms;
+                }
+            }
+
+            @include mq(250px) {
+                &:hover .menu__option__iconewrapper {
+                    margin-right: -1rem;
+                }
+
+                &:hover .check {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @include mq(large) {
+                &:hover .menu__option__iconewrapper {
+                    margin-right: -1rem;
+                }
+
+                &:hover .check {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
