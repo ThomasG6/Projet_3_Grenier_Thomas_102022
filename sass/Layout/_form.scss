@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: $color-alt;
+
+    &__localisation {
+        width: 100%;
+        background-color: darken($color-alt, 5%);
+        color: darken($color-alt, 65%);
+        box-shadow: inset 0 10px 10px -10px darken($color-alt, 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__position {
+            width: 100px;
+
+            .search {
+                color: black;
+                font-weight: bold;
+                background-color: darken($color-alt, 5%);
+                border: darken($color-alt, 5%) 0px solid;
+                box-shadow: 0 0 0;
+
+                @include mq(large) {
+                    font-size: 1em;
+                }
+            }
+
+            .search::placeholder {
+                color: black;
+                font-weight: bold;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            @include mq(large) {
+                width: 150px;
+            }
+        }
+
+        &__icone {
+            padding-right: 18px;
+        }
+    }
+}
