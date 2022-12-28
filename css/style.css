@@ -74,4 +74,123 @@ body {
   padding-right: 18px;
 }
 
+section h2 {
+  margin-left: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a :visited {
+  color: black;
+  text-decoration: none;
+}
+
+.functionalities {
+  padding: 5% 0 8% 0;
+}
+@media screen and (min-width: 600px) {
+  .functionalities {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .functionalities h2 {
+    margin-left: 0;
+  }
+}
+
+.useroptions {
+  padding: 0% 4% 0 10%;
+}
+.useroptions li {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 3.75em;
+  background-color: #F2F2F2;
+  border-radius: 1em/1em;
+  margin-bottom: 3%;
+  padding: 0;
+  box-shadow: 0 0 6px 3px #d2d2d2;
+}
+@media screen and (min-width: 250px) {
+  .useroptions li :active {
+    background-color: #e4d4f9;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .useroptions li :hover {
+    background-color: #e4d4f9;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .useroptions li :hover .icone {
+    color: #9356DC;
+  }
+}
+@media screen and (min-width: 250px) {
+  .useroptions li :active .icone {
+    color: #9356DC;
+  }
+}
+.useroptions li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em/1em;
+  align-items: center;
+}
+.useroptions li a .optionnumber {
+  align-items: center;
+  background-color: #9356DC;
+  border-color: #9356DC;
+  color: white;
+  font-size: 1em;
+  border-radius: 3em/3em;
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: -0.7em;
+}
+.useroptions li a .icone {
+  padding-right: 2em;
+  color: #737373;
+}
+@media screen and (min-width: 600px) {
+  .useroptions li {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .useroptions li {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .useroptions li {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .useroptions {
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .useroptions {
+    padding-left: 0;
+  }
+}
+.useroptions li:nth-child(1) {
+  margin-left: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
