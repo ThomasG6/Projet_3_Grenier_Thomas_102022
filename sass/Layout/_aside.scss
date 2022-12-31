@@ -39,29 +39,14 @@ a {
         padding: 0;
         box-shadow: 0 0 6px 3px #d2d2d2;
 
-        @include mq(250px) {
-            :active {
-                background-color: #e4d4f9;
-            }
+        :hover {
+            background-color: #e4d4f9;
         }
 
-        @include mq(large) {
-            :hover {
-                background-color: #e4d4f9;
-            }
+        :hover .icone {
+            color: $color-primary;
         }
 
-        @include mq(large) {
-            :hover .icone {
-                color: $color-primary;
-            }
-        }
-
-        @include mq(250px) {
-            :active .icone {
-                color: $color-primary;
-            }
-        }
 
         a {
             display: flex;

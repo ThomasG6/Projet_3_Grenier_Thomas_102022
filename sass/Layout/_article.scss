@@ -80,16 +80,8 @@
             opacity: 0;
             transition: opacity 0.5s;
 
-            @include mq(250px) {
-                &:active {
-                    opacity: 1;
-                }
-            }
-
-            @include mq(large) {
-                &:hover {
-                    opacity: 1;
-                }
+            &:hover {
+                opacity: 1;
             }
         }
     }

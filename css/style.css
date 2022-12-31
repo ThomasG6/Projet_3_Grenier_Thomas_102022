@@ -101,25 +101,11 @@ a :visited {
   padding: 0;
   box-shadow: 0 0 6px 3px #d2d2d2;
 }
-@media screen and (min-width: 250px) {
-  .useroptions li :active {
-    background-color: #e4d4f9;
-  }
+.useroptions li :hover {
+  background-color: #e4d4f9;
 }
-@media screen and (min-width: 1280px) {
-  .useroptions li :hover {
-    background-color: #e4d4f9;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .useroptions li :hover .icone {
-    color: #9356DC;
-  }
-}
-@media screen and (min-width: 250px) {
-  .useroptions li :active .icone {
-    color: #9356DC;
-  }
+.useroptions li :hover .icone {
+  color: #9356DC;
 }
 .useroptions li a {
   display: flex;
@@ -303,15 +289,8 @@ a :visited {
   opacity: 0;
   transition: opacity 0.5s;
 }
-@media screen and (min-width: 250px) {
-  .restaurantcard__infos__iconealt:active {
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .restaurantcard__infos__iconealt:hover {
-    opacity: 1;
-  }
+.restaurantcard__infos__iconealt:hover {
+  opacity: 1;
 }
 
 .restaurantpic {
@@ -485,15 +464,8 @@ a :visited {
   grid-row-end: 2;
   transition: opacity 0.5s;
 }
-@media screen and (min-width: 250px) {
-  .maincontainermenu__header__iconealt:active {
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .maincontainermenu__header__iconealt:hover {
-    opacity: 1;
-  }
+.maincontainermenu__header__iconealt:hover {
+  opacity: 1;
 }
 @media screen and (min-width: 600px) {
   .maincontainermenu__header {
@@ -639,21 +611,11 @@ a :visited {
   transform: rotate(0deg);
   transition-duration: 500ms;
 }
-@media screen and (min-width: 250px) {
-  .maincontainermenu .menu__option:hover .menu__option__iconewrapper {
-    margin-right: -1rem;
-  }
-  .maincontainermenu .menu__option:hover .check {
-    transform: rotate(360deg);
-  }
+.maincontainermenu .menu__option:hover .menu__option__iconewrapper {
+  margin-right: -1rem;
 }
-@media screen and (min-width: 1280px) {
-  .maincontainermenu .menu__option:hover .menu__option__iconewrapper {
-    margin-right: -1rem;
-  }
-  .maincontainermenu .menu__option:hover .check {
-    transform: rotate(360deg);
-  }
+.maincontainermenu .menu__option:hover .check {
+  transform: rotate(360deg);
 }
 
 .button__explorer {

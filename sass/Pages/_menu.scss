@@ -91,17 +91,11 @@
             grid-row-end: 2;
             transition: opacity 0.5s;
 
-            @include mq(250px) {
-                &:active {
-                    opacity: 1;
-                }
+            &:hover {
+                opacity: 1;
             }
 
-            @include mq(large) {
-                &:hover {
-                    opacity: 1;
-                }
-            }
+
         }
 
         @include mq(small) {
@@ -238,25 +232,14 @@
                 }
             }
 
-            @include mq(250px) {
-                &:hover .menu__option__iconewrapper {
-                    margin-right: -1rem;
-                }
-
-                &:hover .check {
-                    transform: rotate(360deg);
-                }
+            &:hover .menu__option__iconewrapper {
+                margin-right: -1rem;
             }
 
-            @include mq(large) {
-                &:hover .menu__option__iconewrapper {
-                    margin-right: -1rem;
-                }
-
-                &:hover .check {
-                    transform: rotate(360deg);
-                }
+            &:hover .check {
+                transform: rotate(360deg);
             }
+        
         }
     }
 }
