@@ -122,12 +122,13 @@
     .menu {
         position: relative;
 
-        >h3 {
+        >h2 {
             margin: 40px 0 4% 5%;
             padding: 0 0 1% 0;
             font-weight: 100;
             width: 40px;
             border-bottom: $color-tertiary solid 3px;
+            font-size: 1.3em;
 
             @include mq(small) {
                 margin-top: 10%;
@@ -135,9 +136,9 @@
 
             @include mq(large) {
                 width: 60px;
-                font-size: 1.3em;
             }
         }
+
 
         &__option {
             background-color: white;
@@ -158,18 +159,14 @@
               
             &__title {
                 width:75%;
-                font-size: 95%;
                 align-self: flex-end;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
 
 
-                @include mq(large) {
-                    font-size: 1.2em;
-                }
-
                 h3 {
+                    font-size: 1.2em;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     margin: 0;

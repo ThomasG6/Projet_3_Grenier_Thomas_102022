@@ -492,22 +492,22 @@ a :visited {
 .maincontainermenu .menu {
   position: relative;
 }
-.maincontainermenu .menu > h3 {
+.maincontainermenu .menu > h2 {
   margin: 40px 0 4% 5%;
   padding: 0 0 1% 0;
   font-weight: 100;
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
+  font-size: 1.3em;
 }
 @media screen and (min-width: 600px) {
-  .maincontainermenu .menu > h3 {
+  .maincontainermenu .menu > h2 {
     margin-top: 10%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .maincontainermenu .menu > h3 {
+  .maincontainermenu .menu > h2 {
     width: 60px;
-    font-size: 1.3em;
   }
 }
 .maincontainermenu .menu__option {
@@ -540,18 +540,13 @@ a :visited {
 }
 .maincontainermenu .menu__option__title {
   width: 75%;
-  font-size: 95%;
   align-self: flex-end;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media screen and (min-width: 1280px) {
-  .maincontainermenu .menu__option__title {
-    font-size: 1.2em;
-  }
-}
 .maincontainermenu .menu__option__title h3 {
+  font-size: 1.2em;
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0;
